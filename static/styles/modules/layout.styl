@@ -1,0 +1,77 @@
+body
+html
+  margin 0
+  padding 0
+  height 100%
+  min-height 100%
+#container
+  height 100%
+
+#content
+  @extends .clearfix
+
+#menu
+  width 210px
+  padding 0 0 0 35px
+  position fixed
+  bottom 0
+  left 0
+  height 100%
+  background white
+
+  ul
+    margin 22px 0 0 0
+    padding 0
+
+  li
+    list-style none
+    margin 0
+    font-family 'Helvetica', 'arial', 'sans-serif'
+    font-size 12px
+    font-weight bolder
+    padding 5px 0 
+
+  a
+    color #909090
+    text-decoration none
+
+    &:hover
+      color black
+
+  .active
+    a
+      color black
+
+
+#portafolio
+  img
+    border none
+    margin 0
+    width 100%
+    height auto
+    
+  .box
+    margin 0
+
+
+
+#mi-diario-dibujado
+  background linear-gradient(left, #f6e5a4 0%, #dafdeb 100%)
+  padding 30px 0 0 0
+  .bb-custom-wrapper
+    background url(../images/my-diary-drawn/bg.png)
+    height 594px
+    margin 0 auto
+    position relative
+    text-align center
+    width 958px
+
+
+#contact
+  background url(../images/contact/bg.jpg) fixed top left
+
+#store
+  background url(../images/store/bg.jpg) fixed top left
+
+#about-me
+  background url(../images/about-me/bg.jpg) fixed top left

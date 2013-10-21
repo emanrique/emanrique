@@ -1,0 +1,46 @@
+- var custom = {};
+
+!!!transtitional
+
+include _mixins
+
+block html
+  //if lt IE 7
+    html#html.no-js.lt-ie9.lt-ie8.lt-ie7(lang='en')
+  //if IE 7
+    html#html.no-js.ie7.lt-ie9.lt-ie8(lang='en')
+  //if IE 8
+    html#html.no-js.ie8.lt-ie9(lang='en')
+  //if IE 9
+    html#html.no-js.ie9.lt-ie10(lang='en')
+
+  //[if gt IE 9]><!
+
+  html#html(lang='en')
+    block vars
+    //<![endif]
+    head
+      block custom_head
+        title #{custom.title||''}#{(custom.title)? ' - ' : ''}#{ handler.defaults.title }
+      meta( charset='utf-8' )
+      meta( http-equiv='X-UA-Compatible', content='IE=edge,chrome=1' )
+      meta( name='description', content='' )
+      meta( name="viewport",content="width=device-width,initial-scale=1.0")
+      link( rel='icon', type='image/png', href!=handler.static_url('favicon.ico') )
+      block append_head
+      block styles
+        link(href=handler.static_url('styles/main.css'), rel='stylesheet')
+
+
+    body#body(class=(custom.body_cls)? custom.body_cls : '' )
+      block main-content
+        #container
+          block menu
+            include includes/_menu
+          .content
+            .main-content
+              block content
+      
+      block scripts
+        mixin requireTag('scripts/site.home.js')
+
