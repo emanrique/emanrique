@@ -4,74 +4,77 @@ html
   padding 0
   height 100%
   min-height 100%
+  font-size 16px
+
 #container
   height 100%
 
 #content
   @extends .clearfix
 
+#home
+  background url(../images/bg-home.jpg) fixed top center
+  width 100%
+  height 800px
+  
+  h2
+    color white
+    height 300px
+    margin-top -93px
+    top 50%
+    position absolute
+    left 20px
+    @extends .font-alter
+    font-size 3.125em
+    width 100%
+    text-align center
+
+  span
+    display block
+
+  .name
+    @extends .font-alter-2
+
+    font-size 2.4em
+
+
 #menu
-  width 210px
-  padding 0 0 0 35px
+  width 100%
   position fixed
-  bottom 0
-  left 0
-  height 100%
-  background white
-
+  top 0
+  background #34495D
+  border-bottom 3px solid #2C3E50
+  @extends .clearfix
+  h1
+    float left
+    width 200px
   ul
-    margin 22px 0 0 0
-    padding 0
-
-  li
-    list-style none
     margin 0
-    font-family 'Helvetica', 'arial', 'sans-serif'
-    font-size 12px
-    font-weight bolder
-    padding 5px 0 
+    padding 0
+    float right
+    width 400px
+  li
+    display inline-block
+    padding 20px 10px
+    font-size 1.1em
+    @extends .font-normal
+    vertical-align middle
+
+  .pi
+    height 2em
+    background #4EDC8D
+    width 1px
+    padding 0
+    transform rotate(20deg)
 
   a
-    color #909090
+    color white
     text-decoration none
 
     &:hover
-      color black
+      color #99A39F
 
   .active
     a
-      color black
-
-
-#portafolio
-  img
-    border none
-    margin 0
-    width 100%
-    height auto
-    
-  .box
-    margin 0
-
-
-
-#mi-diario-dibujado
-  background linear-gradient(left, #f6e5a4 0%, #dafdeb 100%)
-  padding 30px 0 0 0
-  .bb-custom-wrapper
-    background url(../images/my-diary-drawn/bg.png)
-    height 594px
-    margin 0 auto
-    position relative
-    text-align center
-    width 958px
-
-
-#contact
-  background url(../images/contact/bg.jpg) fixed top left
-
-#store
-  background url(../images/store/bg.jpg) fixed top left
-
-#about-me
-  background url(../images/about-me/bg.jpg) fixed top left
+      text-decoration underline
+      color #99A39F

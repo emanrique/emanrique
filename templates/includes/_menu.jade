@@ -1,19 +1,19 @@
 #menu.menu
   h1
     a(href=handler.reverse_url('home'))
-      span.sp.sp-main-logo
+      
   ul
     li(class= custom.active_menu==0 ? 'active':'')
-      a(href=handler.reverse_url('home')) Ilustraciones
+      a(href=handler.reverse_url('hey')) Hey!
+    li.pi
     li(class= custom.active_menu==1 ? 'active':'')
-      a(href='#') Se&ntilde;or Caf&eacute;
-    li(class= custom.active_menu==2 ? 'active':'')
-      a(href=handler.reverse_url('iquitos-travel')) Mi diario dibujado
-    li(class= custom.active_menu==3 ? 'active':'')
       a(href=handler.reverse_url('about-me')) Sobre mi
-    li(class= custom.active_menu==4 ? 'active':'')
+    li.pi
+    li(class= custom.active_menu==2 ? 'active':'')
+      a(href=handler.reverse_url('portafolio')) Portafolio
+    li.pi
+    li(class= custom.active_menu==3 ? 'active':'')
       a(href=handler.reverse_url('contact')) Contacto
-    li(class= custom.active_menu==5 ? 'active':'')
-      a(href='#') Noticias
-    li(class= custom.active_menu==6 ? 'active':'')
-      a(href=handler.reverse_url('store')) Tienda
+    li.pi
+    li(class= custom.active_menu==4 ? 'active':'')
+      a(href=handler.reverse_url('blog')) Blog

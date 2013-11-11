@@ -1,71 +1,8 @@
 extend _layout
-block scripts
-  script(type='text/javascript', src=handler.static_url('scripts/libs/masonry.js'))
-  mixin requireTag('scripts/site.home.js')
 
-prepend html
-  - custom.active_menu = '0'
 block content
-  #portafolio.masonry
-    .col
-    .box.col-2d6.masonry-brick
-      a(href=handler.reverse_url('store'))
-        img(src=handler.static_url('images/home/tienda.jpg'))
-    .box.col-1d6.masonry-brick
-      a(href=handler.reverse_url('mr-coffee'))
-        img(src=handler.static_url('images/home/senor-cafe.jpg'))
-    .box.col-1d6.masonry-brick
-      a(href=handler.reverse_url('sagittarius'))
-        img(src=handler.static_url('images/home/sagitario.jpg'))
-    .box.col-1d6.masonry-brick
-      a(href=handler.reverse_url('arcoiris'))
-        img(src=handler.static_url('images/home/people.jpg'))
-    .box.col-1d6.masonry-brick
-      a(href=handler.reverse_url('about-me'))
-        img(src=handler.static_url('images/home/nube.jpg'))
-    .box.col-1d6.masonry-brick
-      a(href=handler.reverse_url('pipo-and-me'))
-        img(src=handler.static_url('images/home/ena.jpg'))
-    .box.col-1d6.masonry-brick
-      a(href=handler.reverse_url('dress-flower'))
-        img(src=handler.static_url('images/home/falda.jpg'))
-    .box.col-1d6.masonry-brick
-      a(href=handler.reverse_url('warhol'))
-        img(src=handler.static_url('images/home/warhol.gif'))
-    .box.col-1d6.masonry-brick
-      a(href=handler.reverse_url())
-        img(src=handler.static_url('images/home/cielo.jpg'))
-    .box.col-1d6.masonry-brick
-      a(href=handler.reverse_url('card'))
-        img(src=handler.static_url('images/home/pipo.jpg'))
-    .box.col-1d6.masonry-brick
-      a(href=handler.reverse_url('mr-coffee-and-tea-cup'))
-        img(src=handler.static_url('images/home/taza-de-te.jpg'))
-    .box.col-2d6.masonry-brick
-      a(href=handler.reverse_url('about-me'))
-        img(src=handler.static_url('images/home/ilove.gif'))
-    .box.col-1d6.masonry-brick
-      a(href=handler.reverse_url('mr-coffee'))
-        img(src=handler.static_url('images/home/senor-cafe.jpg'))
-    .box.col-1d6.masonry-brick
-      a(href=handler.reverse_url('sagittarius'))
-        img(src=handler.static_url('images/home/sagitario.jpg'))
-    .box.col-1d6.masonry-brick
-      a(href=handler.reverse_url('band-aid'))
-        img(src=handler.static_url('images/home/band-aid.jpg'))
-    .box.col-1d6.masonry-brick
-      a(href=handler.reverse_url('iquitos-travel'))
-        img(src=handler.static_url('images/home/lupuna.jpg'))
-    .box.col-1d6.masonry-brick
-      a(href=handler.reverse_url('bad-girl'))
-        img(src=handler.static_url('images/home/cielo-2.jpg'))
-    .box.col-1d6.masonry-brick
-      a(href=handler.reverse_url('bad-girl'))
-        img(src=handler.static_url('images/home/stars.jpg'))
-    .box.col-1d6.masonry-brick
-      a(href=handler.reverse_url('office'))
-        img(src=handler.static_url('images/home/oficina.jpg'))    
-    .box.col-1d6.masonry-brick
-      a(href=handler.reverse_url('clouds'))
-        img(src=handler.static_url('images/home/nubes-chiqui.jpg'))    
-    
+  #home
+    h2 
+      span Hey! Soy
+      span.name ELIZABETH MANRIQUE
+      span Web Ninja Developer
