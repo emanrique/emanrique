@@ -21,8 +21,6 @@
               async: 'libs/require.async'
             },
             modules: [
-              { name: 'site.works' },
-              { name: 'site.diario-dibujado' },
               { name: 'site.home' }
             ]
           }

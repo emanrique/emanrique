@@ -3,21 +3,33 @@ require([
     var $doc = $(document);
     var $win = $(window);
 		function init(){
-      var container = document.querySelector('#portafolio');
-      var menu = document.querySelector('#menu')
-      resize_content()
-      $win.on('resize', resize_content)
-
-      var msnry = new Masonry( container, {
-        columnWidth: '.col',
-        itemSelector: '.box',
-        gutterWidth:0,
-        gutter:0
-      } );
-      
+      $win.on('resize', resize_page);
+      resize_page();
+      show_logo_home();
     }
-    function resize_content(){
-      $('#container').height($win.height())
+    function resize_page(){
+      $('.page').height($win.height())
+    }
+
+    function show_logo_home() {
+
+      setTimeout(function(){
+        $('.logo').animate(
+          {
+            'opacity':'1',
+            'width':'150',
+            'top':'0',
+            'margin-left':'-75'
+          },
+          1000, 
+          function() {
+            $('.emanrique').animate({
+            'opacity':'1',
+            'top':'200'
+            },1000);
+          }
+        )
+      }, 500);
     }
 		$doc.ready(init);
 });

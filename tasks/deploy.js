@@ -26,7 +26,7 @@ module.exports = function(grunt) {
   grunt.registerTask('deploy', 'Compile project', function() {
     var dirdeploy = '';
     
-    grunt.task.run(['jade:compile', 'stylus:compile','sprites','copy','requirejs']);
+    grunt.task.run(['jade:compile','sprites','stylus:compile','copy','requirejs']);
   });
 
 };

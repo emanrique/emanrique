@@ -1,8 +1,15 @@
 extend _layout
-
+prepend vars
+  - custom.active_menu = 0
 block content
-  #home
-    h2 
-      span Hey! Soy
-      span.name ELIZABETH MANRIQUE
-      span Web Ninja Developer
+  #home.page
+    .welcome
+      h1 Elizabeth manrique
+      img(src=handler.static_url('images/logo.png')).logo
+      img(src=handler.static_url('images/emanrique.png')).emanrique
+
+      //- span.name Elizabeth Manrique
+      //- small.profile
+      //-   span.tag <
+      //-   span Frontend Web Developer
+      //-   span.tag >

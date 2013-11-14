@@ -29,7 +29,7 @@ module.exports = function(grunt) {
         src: [ items[i] ],
         options: '--css=' + dest +
           ' --img=' + dest +
-          ' --cachebuster --namespace=sp --url=../sprites/ --margin=10'
+          ' --cachebuster --namespace=sp --url=../sprites/ --margin=10 --retina'
       };
     }
     grunt.config.set('glue', sprites);
